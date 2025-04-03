@@ -1,0 +1,213 @@
+{% extends "base.html" %}
+
+{% block title %}MIRAINA | 生成AI導入支援・研修・AI開発事業{% endblock %}
+{% block description %}MIRAINAは中小企業向け生成AI導入支援・研修・AI開発事業を展開するプロフェッショナル集団です。貴社のAI活用を強力にサポートし、ビジネスの未来を切り拓きます。{% endblock %}
+{% block keywords %}生成AI導入支援,AI研修,AI開発,中小企業AI,生成AI活用{% endblock %}
+
+{% block additional_css %}
+<link rel="stylesheet" href="/static/css/index.css">
+{% endblock %}
+
+{% block additional_structured_data %}
+<!-- Structured Data - WebPage -->
+<script type="application/ld+json">
+{
+    "@context": "https://schema.org",
+    "@type": "WebPage",
+    "name": "MIRAINA | 生成AI導入支援・研修・AI開発事業",
+    "description": "MIRAINAは中小企業向け生成AI導入支援・研修・AI開発事業を展開するプロフェッショナル集団です。貴社のAI活用を強力にサポートし、ビジネスの未来を切り拓きます。",
+    "publisher": {
+        "@type": "Organization",
+        "name": "MIRAINA"
+    }
+}
+</script>
+{% endblock %}
+
+{% block content %}
+<!-- Hero Section -->
+ 
+<section class="hero-section" id="hero">
+    <div class="hero-animation-container" id="animation-container"></div>
+    <div class="hero-content">
+        <h2 class="hero-title">テクノロジーが創る<br>未来のビジネス</h2>
+        <p class="hero-subtitle">中小企業に特化した生成AI導入支援から<br>AI開発まで、あなたのビジネスを革新します</p>
+        <div class="hero-cta">
+            <a href="/contact" class="cta-button">導入相談をする</a>
+        </div>
+    </div>
+</section>
+
+<!-- Services Section -->
+<section class="services-section" id="services">
+    <!-- 帯 -->
+    <div class="services-header">
+        <h2 class="services-title">サービス</h2>
+        <p class="services-subtitle">SERVICES</p>
+    </div>
+
+    <!-- サービス一覧 -->
+    <div class="services-content container">
+        <div class="service-item">
+            <h3 class="service-heading">生成AI導入支援</h3>
+            <p class="service-description">業務に合わせたAI導入支援。貴社の課題に合わせて、最適な生成AI活用を提案します。</p>
+        </div>
+        <div class="service-item">
+            <h3 class="service-heading">AI研修</h3>
+            <p class="service-description">経営層・現場社員向けにAIリテラシーを高める研修。実践的な活用方法を学べます。</p>
+        </div>
+        <div class="service-item">
+            <h3 class="service-heading">RAGを用いたAI開発</h3>
+            <p class="service-description">社内ナレッジを活用し、独自のAIチャットボットや業務支援アプリを開発します。</p>
+        </div>
+    </div>
+</section>
+
+<!-- Works Section -->
+<section class="works-section" id="works">
+    <div class="container">
+        <div class="section-header">
+            <h2 class="section-title">実績</h2>
+            <p class="section-description">様々な業種・業界のAI導入を<br>成功に導いた事例をご紹介します</p>
+        </div>
+        <div class="works-grid">
+            <div class="work-card">
+                <div class="work-image">
+                    <img src="/static/images/work-1.jpg" alt="製造業A社の事例" loading="lazy">
+                </div>
+                <div class="work-content">
+                    <p class="work-category">製造業</p>
+                    <h3 class="work-title">生産管理プロセスの自動化によるコスト削減</h3>
+                    <p class="work-description">生成AIを活用した在庫最適化システムの導入により、年間コストを30%削減に成功しました。</p>
+                    <a href="/works/manufacturing-case" class="work-link">詳細を見る</a>
+                </div>
+            </div>
+            <div class="work-card">
+                <div class="work-image">
+                    <img src="/static/images/work-2.jpg" alt="小売業B社の事例" loading="lazy">
+                </div>
+                <div class="work-content">
+                    <p class="work-category">小売業</p>
+                    <h3 class="work-title">顧客体験向上のためのAIチャットボット導入</h3>
+                    <p class="work-description">24時間対応のAIチャットボットにより、顧客満足度が25%向上し、問い合わせ対応コストを削減。</p>
+                    <a href="/works/retail-case" class="work-link">詳細を見る</a>
+                </div>
+            </div>
+            <div class="work-card">
+                <div class="work-image">
+                    <img src="/static/images/work-3.jpg" alt="サービス業C社の事例" loading="lazy">
+                </div>
+                <div class="work-content">
+                    <p class="work-category">サービス業</p>
+                    <h3 class="work-title">社内ナレッジ管理システムの構築</h3>
+                    <p class="work-description">大量の社内ドキュメントをAIで分析・整理し、検索効率を10倍に改善。情報共有が活性化しました。</p>
+                    <a href="/works/service-case" class="work-link">詳細を見る</a>
+                </div>
+            </div>
+        </div>
+        <div class="more-link-container">
+            <a href="/works" class="more-link">すべての実績を見る</a>
+        </div>
+    </div>
+</section>
+
+<!-- Blog Section -->
+<section class="blog-section" id="blog">
+
+    <!-- Blog Header -->
+    <div class="blog-header">
+        <div class="blog-header-content">
+            <h2 class="blog-title">ブログ</h2>
+            <p class="blog-subtitle">AI活用のヒントとなる<br>最新情報をお届けします</p>
+        </div>
+    </div>
+
+    <!-- Blog Cards -->
+    <div class="container">
+        <div class="blog-grid">
+            <div class="blog-card">
+                <a href="https://note.com/miraina/articles/example1" target="_blank" rel="noopener noreferrer" class="blog-link">
+                    <div class="blog-image">
+                        <img src="/static/images/blog-1.jpg" alt="中小企業におけるAI活用の最新トレンド" loading="lazy">
+                    </div>
+                    <div class="blog-content">
+                        <p class="blog-date">2025.03.15</p>
+                        <h3 class="blog-card-title">中小企業におけるAI活用の最新トレンド</h3>
+                        <p class="blog-excerpt">2025年に注目すべき生成AIの活用法と導入のポイントについて解説します。</p>
+                    </div>
+                </a>
+            </div>
+
+            <div class="blog-card">
+                <a href="https://note.com/miraina/articles/example2" target="_blank" rel="noopener noreferrer" class="blog-link">
+                    <div class="blog-image">
+                        <img src="/static/images/blog-2.jpg" alt="成功するAI導入プロジェクトの進め方" loading="lazy">
+                    </div>
+                    <div class="blog-content">
+                        <p class="blog-date">2025.03.01</p>
+                        <h3 class="blog-card-title">成功するAI導入プロジェクトの進め方</h3>
+                        <p class="blog-excerpt">AI導入プロジェクトで多くの企業が陥る失敗とその解決策を徹底解説します。</p>
+                    </div>
+                </a>
+            </div>
+
+            <div class="blog-card">
+                <a href="https://note.com/miraina/articles/example3" target="_blank" rel="noopener noreferrer" class="blog-link">
+                    <div class="blog-image">
+                        <img src="/static/images/blog-3.jpg" alt="生成AIツールの比較検証" loading="lazy">
+                    </div>
+                    <div class="blog-content">
+                        <p class="blog-date">2025.02.15</p>
+                        <h3 class="blog-card-title">生成AIツールの比較検証</h3>
+                        <p class="blog-excerpt">主要な生成AIツールの機能・コスト・使いやすさを徹底的に比較検証しました。</p>
+                    </div>
+                </a>
+            </div>
+        </div>
+
+        <div class="more-link-container">
+            <a href="https://note.com/miraina" target="_blank" rel="noopener noreferrer" class="more-link">すべての記事を見る</a>
+        </div>
+    </div>
+</section>
+
+
+
+
+<!-- Contact Section -->
+<section class="contact-section" id="contact">
+    <div class="container">
+        <div class="section-header">
+            <h2 class="section-title">お問い合わせ</h2>
+            <p class="section-description">AI導入に関するご相談は<br>お気軽にお問い合わせください</p>
+        </div>
+        <div class="contact-content">
+            <div class="contact-text">
+                <p>AI導入をご検討されている企業様へ<br>まずは無料でご相談いただけます。</p>
+                <ul class="contact-features">
+                    <li>業務課題に合わせたAI活用提案</li>
+                    <li>費用対効果の高い導入プラン</li>
+                    <li>具体的な活用シナリオのご提案</li>
+                </ul>
+            </div>
+            <div class="contact-button-container">
+                <a href="/contact" class="contact-button">お問い合わせフォームへ</a>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Breadcrumb -->
+<div class="breadcrumb">
+    <div class="container">
+        <ul>
+            <li><a href="/">ホーム</a></li>
+        </ul>
+    </div>
+</div>
+{% endblock %}
+
+{% block additional_js %}
+<script src="/static/js/hero-animation.js" defer></script>
+<script src="/static/js/index.js" defer></script>
+{% endblock %}

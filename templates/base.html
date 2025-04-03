@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Common meta tags -->
+    <meta name="author" content="MIRAINA">
+    <meta name="robots" content="index, follow">
+    
+    <!-- Title and meta description will be replaced per page -->
+    <title>{% block title %}MIRAINA | AI導入支援・研修・AI開発事業{% endblock %}</title>
+    <meta name="description" content="{% block description %}MIRAINAは、生成AI導入支援・研修・AI開発事業を展開する企業です。中小企業の未来を創造するAIソリューションを提供します。{% endblock %}">
+    <meta name="keywords" content="{% block keywords %}AI導入支援,AI研修,AI開発,生成AI,中小企業{% endblock %}">
+    
+    <!-- OGP Tags -->
+    <meta property="og:title" content="{% block og_title %}MIRAINA | AI導入支援・研修・AI開発事業{% endblock %}">
+    <meta property="og:description" content="{% block og_description %}MIRAINAは、生成AI導入支援・研修・AI開発事業を展開する企業です。中小企業の未来を創造するAIソリューションを提供します。{% endblock %}">
+    <meta property="og:type" content="{% block og_type %}website{% endblock %}">
+    <meta property="og:url" content="{% block og_url %}https://miraina.co.jp{% endblock %}">
+    <meta property="og:image" content="{% block og_image %}/static/images/ogp.jpg{% endblock %}">
+    <meta property="og:site_name" content="MIRAINA">
+    
+    <!-- Twitter Card -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="{% block twitter_title %}MIRAINA | AI導入支援・研修・AI開発事業{% endblock %}">
+    <meta name="twitter:description" content="{% block twitter_description %}MIRAINAは、生成AI導入支援・研修・AI開発事業を展開する企業です。中小企業の未来を創造するAIソリューションを提供します。{% endblock %}">
+    <meta name="twitter:image" content="{% block twitter_image %}/static/images/ogp.jpg{% endblock %}">
+    
+    <!-- Favicon -->
+    <link rel="icon" href="/static/images/favicon.ico">
+    <link rel="apple-touch-icon" href="/static/images/apple-touch-icon.png">
+    
+    <!-- CSS -->
+    <link rel="stylesheet" href="/static/css/reset.css">
+    <link rel="stylesheet" href="/static/css/common.css">
+    {% block additional_css %}{% endblock %}
+    
+    <!-- Preload critical assets -->
+    <link rel="preload" href="/static/fonts/main-font.woff2" as="font" type="font/woff2" crossorigin>
+    
+    <!-- Structured Data - Organization -->
+    <script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@type": "Organization",
+        "name": "MIRAINA",
+        "url": "https://miraina.co.jp",
+        "logo": "https://miraina.co.jp/static/images/logo.png",
+        "sameAs": [
+            "https://twitter.com/miraina_ai",
+            "https://www.linkedin.com/company/miraina-ai"
+        ],
+        "contactPoint": {
+            "@type": "ContactPoint",
+            "telephone": "+81-03-XXXX-XXXX",
+            "contactType": "customer service",
+            "availableLanguage": ["Japanese", "English"]
+        }
+    }
+    </script>
+    {% block additional_structured_data %}{% endblock %}
+</head>
+<body>
+    <!-- Header (Fixed) -->
+    <header class="site-header">
+        <div class="header-container">
+            <h1 class="site-logo"><a href="/">MIRAINA</a></h1>
+            <nav class="global-nav">
+                <ul>
+                    <li><a href="/services" class="nav-link">サービス</a></li>
+                    <li><a href="/works" class="nav-link">実績</a></li>
+                    <li><a href="/blog" class="nav-link">ブログ</a></li>
+                    <li><a href="/contact" class="nav-link contact-btn">お問い合わせ</a></li>
+                </ul>
+            </nav>
+            <div class="hamburger-menu">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </div>
+    </header>
+
+    <!-- Mobile Navigation (Overlay) -->
+    <nav class="mobile-nav">
+        <ul>
+            <li><a href="/services">サービス</a></li>
+            <li><a href="/works">実績</a></li>
+            <li><a href="/blog">ブログ</a></li>
+            <li><a href="/contact">お問い合わせ</a></li>
+        </ul>
+    </nav>
+
+    <!-- Main Content -->
+    <main>
+        {% block content %}{% endblock %}
+    </main>
+
+    <!-- Footer (Fixed) -->
+    <footer class="site-footer">
+        <div class="footer-container">
+            <div class="footer-logo">
+                <a href="/">MIRAINA</a>
+            </div>
+            <div class="footer-nav">
+                <ul>
+                    <li><a href="/services">サービス</a></li>
+                    <li><a href="/works">実績</a></li>
+                    <li><a href="/blog">ブログ</a></li>
+                    <li><a href="/contact">お問い合わせ</a></li>
+                    <li><a href="/privacy-policy">プライバシーポリシー</a></li>
+                </ul>
+            </div>
+            <div class="copyright">
+                <p>&copy;2025 MIRAINA All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Common JS -->
+    <script src="/static/js/common.js" defer></script>
+    {% block additional_js %}{% endblock %}
+</body>
+</html>

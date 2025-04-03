@@ -1,0 +1,361 @@
+/* ===== Hero Section Styles ===== */
+/* ===== Hero Section Styles ===== */
+.hero-section {
+    height: 100vh;
+    width: 100%;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+    background-color: #000000;
+}
+
+.hero-animation-container {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 1;
+}
+
+.hero-content {
+    position: relative;
+    z-index: 2;
+    text-align: center;
+    padding: 0 20px;
+    width: 100%;
+    max-width: 100%;
+    animation: none; /* アニメーションをJSで制御するため削除 */
+    opacity: 0;
+    transform: translateY(20px);
+    transition: opacity 1.5s ease, transform 1.5s ease;
+}
+
+.hero-title {
+    font-size: 48px;
+    font-weight: 700;
+    margin-bottom: 20px;
+    line-height: 1.2;
+    background: linear-gradient(70deg, #4e74ff, #FFFFFF);
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+    /* 以下のアニメーション関連スタイルを削除 */
+    opacity: 1;
+    transform: none;
+    animation: none;
+}
+
+.hero-subtitle {
+    font-size: 24px;
+    font-weight: 400;
+    color: #CCCCCC;
+    margin-bottom: 40px;
+    /* 以下のアニメーション関連スタイルを削除 */
+    opacity: 1;
+    transform: none;
+    animation: none;
+}
+
+.hero-cta {
+    /* 以下のアニメーション関連スタイルを削除 */
+    opacity: 1;
+    transform: none;
+    animation: none;
+}
+  
+  .cta-button {
+    display: inline-block;
+    padding: 15px 40px;
+    background-color: #1E90FF;
+    color: #FFFFFF;
+    font-size: 18px;
+    font-weight: 600;
+    text-decoration: none;
+    border-radius: 8px;
+    transition: all 0.3s ease;
+    border: none;
+    cursor: pointer;
+    box-shadow: 0 4px 15px rgba(30, 144, 255, 0.3);
+  }
+  
+  .cta-button:hover {
+    background: linear-gradient(45deg, #5FA8FF, #9DB3FF);
+    transform: translateY(-5px);
+    box-shadow: 0 8px 25px rgba(95, 168, 255, 0.4);
+}
+
+  /* ===== Scroll Indicator Styles ===== */
+  .scroll-indicator {
+    position: absolute;
+    bottom: 100px;   /* ← 好みで調整 */
+    left: 50%;
+    transform: translateX(-50%);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    z-index: 2;
+    opacity: 0;
+    animation: heroFadeIn 1.5s ease forwards 2s;
+    cursor: pointer;
+}
+  
+  .scroll-arrow {
+    font-size: 24px;
+    color: #FFFFFF;
+    animation: heroBounce 2s infinite;
+  }
+  
+  .scroll-text {
+    font-size: 14px;
+    margin-top: 5px;
+    color: #CCCCCC;
+  }
+  
+  /* ===== Hero Animations ===== */
+  @keyframes heroFadeIn {
+    0% {
+      opacity: 0;
+      transform: translateY(20px);
+    }
+    100% {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+  
+  @keyframes heroBounce {
+    0%, 20%, 50%, 80%, 100% {
+      transform: translateY(0);
+    }
+    40% {
+      transform: translateY(-10px);
+    }
+    60% {
+      transform: translateY(-5px);
+    }
+  }
+  
+  /* ===== Services Section ===== */
+.services-section {
+    padding: 0;
+    background: #fff;
+}
+
+/* --- ヘッダー帯 --- */
+.services-header {
+    background: linear-gradient(135deg, #0f2b4c 20%, #1e90ff 80%, #67c6ff 100%);
+    margin-top: 120px;
+    padding: 60px 0;
+    text-align: center;
+    color: #ffffff;
+}
+
+.services-title {
+    font-size: 40px;
+    font-weight: 700;
+    margin-bottom: 5px;
+}
+
+.services-subtitle {
+    font-size: 18px;
+    letter-spacing: 2px;
+}
+
+/* --- サービス一覧 --- */
+.services-content {
+    background: #ffffff;
+    padding: 80px 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+}
+
+/* サービスカード */
+.service-item {
+    background: #f5f8ff;
+    border-radius: 12px;
+    padding: 30px 25px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.service-item:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.08);
+}
+
+/* 小見出し */
+.service-heading {
+    font-size: 24px;
+    font-weight: 600;
+    margin-bottom: 12px;
+    color: #0f2b4c;
+}
+
+/* 説明文 */
+.service-description {
+    font-size: 16px;
+    color: #555;
+    line-height: 1.8;
+}
+  
+  /* ===== Responsive Styles ===== */
+  @media (max-width: 768px) {
+    .hero-title {
+      font-size: 36px;
+    }
+    
+    .hero-subtitle {
+      font-size: 18px;
+    }
+    
+    .cta-button {
+      padding: 12px 30px;
+      font-size: 16px;
+    }
+    
+    .services-grid {
+      grid-template-columns: 1fr;
+    }
+  }
+  
+  .works-section {
+    padding: 100px 0;
+    margin-bottom: 50px;
+    background-color: #f5f5f5; /* 薄いグレー */
+}
+
+
+/* ===== Blog Section ===== */
+.blog-section {
+    padding: 0;
+}
+
+/* 見出し部分 */
+.blog-header {
+    position: relative;
+    width: 100%;
+    height: 280px;
+    overflow: hidden;
+    background-image: url('/static/images/blog_background.png');
+    background-size: cover;
+    background-position: center;
+}
+
+.blog-header-bg {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    filter: brightness(0.8);
+}
+
+.blog-header-content {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    color: #ffffff;
+}
+
+.blog-title {
+    font-size: 42px;
+    font-weight: 700;
+    margin-bottom: 10px;
+}
+
+.blog-subtitle {
+    font-size: 18px;
+    opacity: 0.9;
+}
+
+/* ===== Blog Grid ===== */
+.blog-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(320px, 1fr));
+    gap: 30px;
+    margin-top: 60px;
+}
+
+/* ===== Blog Card ===== */
+.blog-card {
+    overflow: hidden;
+    border-radius: 12px;
+    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.08);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    background: #ffffff;
+}
+
+.blog-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 12px 25px rgba(0, 0, 0, 0.15);
+}
+
+.blog-image img {
+    width: 100%;
+    height: auto;
+    display: block;
+}
+
+.blog-content {
+    padding: 20px;
+}
+
+.blog-date {
+    font-size: 14px;
+    color: #888888;
+    margin-bottom: 5px;
+}
+
+.blog-card-title {
+    font-size: 18px;
+    font-weight: 600;
+    margin-bottom: 10px;
+    color: #222222;
+}
+
+.blog-excerpt {
+    font-size: 14px;
+    color: #555555;
+    line-height: 1.6;
+}
+
+/* ===== More Link ===== */
+.more-link-container {
+    text-align: center;
+    margin-top: 40px;
+}
+
+.more-link {
+    display: inline-block;
+    padding: 10px 25px;
+    background: #1e90ff;
+    color: #ffffff;
+    border-radius: 6px;
+    text-decoration: none;
+    transition: background 0.3s;
+}
+
+.more-link:hover {
+    background: #39ff14;
+}
+
+
+  @media (max-width: 480px) {
+    .hero-title {
+      font-size: 28px;
+    }
+    
+    .hero-subtitle {
+      font-size: 16px;
+      margin-bottom: 30px;
+    }
+    
+    .cta-button {
+      padding: 10px 24px;
+      font-size: 14px;
+    }
+  }
