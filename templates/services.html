@@ -16,7 +16,7 @@
 <meta property="og:site_name" content="MIRAINA">
 {% endblock %}
 
-{% block css %}
+{% block additional_css %}
 <link rel="stylesheet" href="{{ url_for('static', filename='css/services.css') }}">
 {% endblock %}
 
@@ -27,7 +27,7 @@
     <section class="services-hero-section">
         <div class="container">
             <h1 class="services-title">サービス</h1>
-            <p class="services-subtitle">貴社のビジネスを進化させるAIソリューション</p>
+            <p class="services-subtitle">ビジネスを進化させるAIソリューション</p>
         </div>
     </section>
 
@@ -52,24 +52,24 @@
             <div class="service-categories">
                 <div class="category-item">
                     <div class="category-icon">
-                        <img src="{{ url_for('static', filename='images/icon-ai-consulting.svg') }}" alt="AI導入コンサルティングアイコン" loading="lazy">
+                        <img src="static/images/strategic_ai_implementation_service.png" alt="AI導入コンサルティングアイコン">
                     </div>
-                    <h3>戦略的AI導入</h3>
-                    <p>貴社のビジネス課題に最適なAI導入戦略を構築します</p>
+                    <h3>戦略的生成AI導入</h3>
+                    <p>貴社の業務課題に最適なAI導入戦略を提案します。</p>
                 </div>
                 <div class="category-item">
                     <div class="category-icon">
-                        <img src="{{ url_for('static', filename='images/icon-ai-training.svg') }}" alt="AI研修アイコン" loading="lazy">
+                        <img src="static/images/ai_training_service.png" alt="AI研修アイコン">
                     </div>
-                    <h3>AI活用研修</h3>
-                    <p>社員のAIリテラシー向上と実践的な活用スキルを育成します</p>
+                    <h3>AI人材育成研修</h3>
+                    <p>社員のAIリテラシー向上と実践的な活用スキルを育成します。</p>
                 </div>
                 <div class="category-item">
                     <div class="category-icon">
-                        <img src="{{ url_for('static', filename='images/icon-ai-development.svg') }}" alt="AI開発アイコン" loading="lazy">
+                        <img src="static/images/original_ai_solution.png" alt="AI開発アイコン">
                     </div>
-                    <h3>カスタムAI開発</h3>
-                    <p>貴社独自の業務に特化したAIソリューションを開発します</p>
+                    <h3>AIチャットボット開発</h3>
+                    <p>貴社独自の業務に特化したAIチャットボットを開発します。</p>
                 </div>
             </div>
         </div>
@@ -80,25 +80,21 @@
         <div class="container">
             <div class="service-card">
                 <div class="service-content">
-                    <h2 class="service-title">戦略的AI導入</h2>
+                    <h2 class="service-title">戦略的生成AI導入</h2>
                     <p class="service-description">
                         生成AIの可能性を最大限に引き出し、貴社のビジネスに最適な形で導入するためのコンサルティングサービスです。
-                        現状分析から実装、評価まで一貫したサポートを提供します。
+                        既存の業務フローを崩さないような導入を行い、社内へのAI定着の高速化を実現します。
                     </p>
                     <ul class="service-features">
                         <li>ビジネス課題・業務フロー分析</li>
-                        <li>AI導入による効果予測・ROI算出</li>
                         <li>導入計画の策定・ロードマップ作成</li>
                         <li>最適なAIツール・モデル選定</li>
-                        <li>プロトタイプ開発・検証</li>
-                        <li>セキュリティ・コンプライアンス対応</li>
+                        <li>小規模導入による効果測定</li>
+                        <li>セキュリティ・コンプライアンスに配慮</li>
                     </ul>
-                    <div class="service-cta">
-                        <a href="{{ url_for('contact') }}" class="btn btn-primary">お問い合わせ</a>
-                    </div>
                 </div>
                 <div class="service-image">
-                    <img src="{{ url_for('static', filename='images/service-consulting.jpg') }}" alt="戦略的AI導入サービスのイメージ" loading="lazy">
+                    <img src="static/images/strategic_ai_implementation_service.png" alt="戦略的AI導入サービスのイメージ">
                 </div>
             </div>
         </div>
@@ -108,25 +104,22 @@
         <div class="container">
             <div class="service-card reverse">
                 <div class="service-content">
-                    <h2 class="service-title">AI活用研修</h2>
+                    <h2 class="service-title">AI人材育成研修</h2>
                     <p class="service-description">
                         社員のAIリテラシーを高め、業務効率化を実現するための実践的なトレーニングプログラムです。
                         座学だけでなく、実際の業務に即した演習を通じて確実なスキル定着を図ります。
                     </p>
                     <ul class="service-features">
                         <li>生成AI基礎知識習得</li>
+                        <li>ChatGPT入門講座</li>
                         <li>プロンプトエンジニアリング実践</li>
                         <li>業務別AI活用ワークショップ</li>
-                        <li>AIツール操作トレーニング</li>
                         <li>AI倫理・セキュリティ教育</li>
                         <li>カスタマイズ可能なカリキュラム</li>
                     </ul>
-                    <div class="service-cta">
-                        <a href="{{ url_for('contact') }}" class="btn btn-primary">お問い合わせ</a>
-                    </div>
                 </div>
                 <div class="service-image">
-                    <img src="{{ url_for('static', filename='images/service-training.jpg') }}" alt="AI活用研修サービスのイメージ" loading="lazy">
+                    <img src="static/images/ai_training_service.png" alt="AI活用研修サービスのイメージ">
                 </div>
             </div>
         </div>
@@ -136,25 +129,21 @@
         <div class="container">
             <div class="service-card">
                 <div class="service-content">
-                    <h2 class="service-title">カスタムAI開発</h2>
+                    <h2 class="service-title">AIチャットボット開発</h2>
                     <p class="service-description">
-                        貴社の特有の業務課題や要件に合わせたカスタムAIソリューションを開発します。
-                        既存システムとの連携や独自機能の実装など、柔軟な対応が可能です。
+                        貴社の特有の業務課題や要件に合わせたカスタムAIチャットボットを開発します。
+                        社内マニュアルや顧客対応履歴などの各社内ナレッジに合わせた柔軟な対応が可能です。
                     </p>
                     <ul class="service-features">
-                        <li>カスタムLLMファインチューニング</li>
+                        <li>カスタムAIチャットボット</li>
                         <li>業務特化型AIアシスタント開発</li>
-                        <li>社内ナレッジベース連携</li>
-                        <li>業務自動化ワークフロー構築</li>
-                        <li>既存システム・API連携</li>
+                        <li>新人育成質問用チャットボット</li>
+                        <li>自動問い合わせ対応チャットボット</li>
                         <li>継続的な改善・メンテナンス</li>
                     </ul>
-                    <div class="service-cta">
-                        <a href="{{ url_for('contact') }}" class="btn btn-primary">お問い合わせ</a>
-                    </div>
                 </div>
                 <div class="service-image">
-                    <img src="{{ url_for('static', filename='images/service-development.jpg') }}" alt="カスタムAI開発サービスのイメージ" loading="lazy">
+                    <img src="static/images/original_ai_solution.png" alt="AIチャットボット開発サービス">
                 </div>
             </div>
         </div>
@@ -164,7 +153,7 @@
     <section class="implementation-flow">
         <div class="container">
             <h2 class="section-title">導入フロー</h2>
-            <p class="section-description">MIRAINAのサービス導入から運用までの流れをご紹介します</p>
+            <p class="section-description">MIRAINAのサービス導入から運用までの流れをご紹介します。</p>
             
             <div class="flow-steps">
                 <div class="flow-step">
@@ -178,7 +167,7 @@
                     <div class="step-number">02</div>
                     <div class="step-content">
                         <h3>要件定義・提案</h3>
-                        <p>ヒアリング内容をもとに、最適なAI導入プランをご提案します。目標達成に向けたロードマップを策定します。</p>
+                        <p>ヒアリング内容をもとに、最適なAI導入計画をご提案します。</p>
                     </div>
                 </div>
                 <div class="flow-step">
@@ -191,15 +180,22 @@
                 <div class="flow-step">
                     <div class="step-number">04</div>
                     <div class="step-content">
-                        <h3>実装・トレーニング</h3>
-                        <p>選定したAIソリューションの実装と、社員へのトレーニングを実施します。段階的な導入で確実な定着を図ります。</p>
+                        <h3>小規模導入による効果測定</h3>
+                        <p>小規模に導入し、効果測定や改善点の洗い出しを行います。</p>
                     </div>
                 </div>
                 <div class="flow-step">
                     <div class="step-number">05</div>
                     <div class="step-content">
-                        <h3>効果測定・改善</h3>
-                        <p>導入後の効果を定量的に測定し、必要に応じて改善提案を行います。継続的なサポートで成果を最大化します。</p>
+                        <h3>本導入</h3>
+                        <p>小規模導入の結果を元に、改善を行い、最終的な導入を行います。</p>
+                    </div>
+                </div>
+                <div class="flow-step">
+                    <div class="step-number">06</div>
+                    <div class="step-content">
+                        <h3>定期サポート</h3>
+                        <p>導入後も、定期的なミーティングやチャットボットの保守・アップデートを通じて継続的な支援を行います。</p>
                     </div>
                 </div>
             </div>
@@ -207,7 +203,7 @@
     </section>
 
     <!-- FAQ -->
-    <section class="faq-section">
+    <!-- <section class="faq-section">
         <div class="container">
             <h2 class="section-title">よくあるご質問</h2>
             <div class="faq-list">
@@ -258,13 +254,13 @@
                 </div>
             </div>
         </div>
-    </section>
+    </section> -->
 
     <!-- CTA -->
     <section class="cta-section">
         <div class="container">
             <div class="cta-content">
-                <h2>AIの力で貴社のビジネスを次のステージへ</h2>
+                <h2>AIの力で事業を次のステージへ</h2>
                 <p>まずはお気軽に無料相談からスタートしましょう</p>
                 <a href="{{ url_for('contact') }}" class="btn btn-accent">無料相談を予約する</a>
             </div>

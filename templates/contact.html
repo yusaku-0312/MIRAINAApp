@@ -1,0 +1,27 @@
+{% extends "base.html" %}
+
+{% block title %}お問い合わせ | MIRAINA - AI導入支援・研修・開発{% endblock %}
+
+{% block description %}MIRAINAへのお問い合わせページです。生成AI導入支援、研修、カスタムAI開発に関するご相談を受け付けております。{% endblock %}
+{% block keywords %}お問い合わせ,AI導入相談,生成AI,AI開発,企業支援{% endblock %}
+
+{% block additional_css %}
+<link rel="stylesheet" href="{{ url_for('static', filename='css/contact.css') }}">
+{% endblock %}
+
+{% block content %}
+<section class="contact-hero">
+  <div class="container">
+    <h1 class="contact-title">お問い合わせ</h1>
+    <p class="contact-subtitle">AI導入に関するご相談はお気軽にどうぞ<br>※フォーム読み込みに時間がかかることがあります。</p>
+  </div>
+</section>
+
+<section class="contact-form-section">
+  <div class="container">
+    <div class="form-wrapper">
+      <iframe src="https://docs.google.com/forms/d/e/1FAIpQLSdUdB2fIaNFlN_SLC7gHDq8b750HAM5WeAoyVZThH28itoAAg/viewform?embedded=true" width="100%" height="1452" frameborder="0" marginheight="0" marginwidth="0">読み込んでいます…</iframe>
+    </div>
+  </div>
+</section>
+{% endblock %}
