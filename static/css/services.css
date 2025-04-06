@@ -235,9 +235,10 @@
     position: absolute;
     top: 0;
     bottom: 0;
-    left: 30px;
+    left: 30px; /* 中心線の位置 */
     width: 2px;
     background-color: #1E90FF;
+    z-index: 0; /* 丸を貫通させるため、z-indexを低く設定 */
 }
 
 .flow-step {
@@ -261,26 +262,16 @@
     justify-content: center;
     font-size: 1.5rem;
     font-weight: bold;
-    z-index: 1;
+    z-index: 1; /* 数字の丸は線の上に表示 */
     flex-shrink: 0; /* スマホ対応：縮小を防止 */
+    position: relative; /* 位置調整のために追加 */
+    left: -29px; /* 縦線の中央に丸を配置するための調整 */
 }
 
 .step-content {
-    margin-left: 30px;
+    margin-left: 0; /* 元の余白をリセット */
     padding: 10px 0;
 }
-
-.step-content h3 {
-    font-size: 1.4rem;
-    margin-bottom: 10px;
-    font-weight: 600;
-}
-
-.step-content p {
-    color: #555;
-    line-height: 1.6;
-}
-
 /* FAQ */
 .faq-section {
     padding: 80px 0;
@@ -529,10 +520,8 @@
         font-size: 1.1rem;
     }
     
-    .flow-steps::before {
-        left: 25px;
-    }
 }
+
 
 @media (max-width: 576px) {
     .services-hero-section {
@@ -588,19 +577,9 @@
         width: 10px; /* スマホ対応：サイズ調整 */
         height: 10px;
     }
-    
-    .step-number {
-        width: 45px; /* スマホ対応：サイズ調整 */
-        height: 45px;
-        font-size: 1.1rem;
-    }
-    
-    .flow-steps::before {
-        left: 22px; /* 縮小した円の中心に合わせる */
-    }
-    
+
     .step-content {
-        margin-left: 20px; /* スマホ対応：余白調整 */
+        margin-left: 5px; /* スマホ対応：余白調整 */
     }
     
     .step-content h3 {
@@ -648,17 +627,7 @@
     .section-title {
         font-size: 1.4rem;
     }
-    
-    .step-number {
-        width: 40px;
-        height: 40px;
-        font-size: 1rem;
-    }
-    
-    .flow-steps::before {
-        left: 20px;
-    }
-    
+
     .btn-accent {
         padding: 10px 20px;
         font-size: 0.9rem;
